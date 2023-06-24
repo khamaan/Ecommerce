@@ -1,0 +1,6 @@
+{% autoescape off %}
+Hi {{ user.first_name }},
+Please Check Below the Link to Activate your Account For Greate Kart
+htpp://{{domain}}{% url 'activate' uidb64=uid token=token %}
+IF IT'S NOT YOU PLEASE IGNORE THIS MAIL
+{% endautoescape %}
