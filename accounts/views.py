@@ -218,7 +218,7 @@ def dashboard(request):
         try:
             userprofile = UserProfile.objects.get(user=user)
         except UserProfile.DoesNotExist:
-            userprofile = UserProfile.objects.create(user=user)
+            userprofile = UserProfile.objects.create(user=user,profilr_picture="default.png")
     except User.DoesNotExist:
         user = None
         # userprofile = UserProfile.objects.get(user=request.user.id)
